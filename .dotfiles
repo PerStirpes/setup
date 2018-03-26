@@ -1,3 +1,6 @@
+echo "Installing Homebrew"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 homebrew_packages=(
 	"bash"
 	"bash-completion"
@@ -36,14 +39,17 @@ for node_package in "${node_packages[@]}"; do
 	npm install -g "$node_package"
 done
 
-echo "Installing Homebrew cask apps and fonts"
-brew tap caskroom/fonts
+echo "Installing Homebrew cask apps"
+brew tap caskroom
 homebrew_cask_packages=(
 	"1password"
 	"google-chrome"
 	"spotify"
 	"slack"
 	"kap"
+	"skitch"
+	"sonos"
+	"zoomus"
 )
 
 for homebrew_cask_package in "${homebrew_cask_packages[@]}"; do
@@ -80,3 +86,5 @@ killall SystemUIServer
 
 echo "Configuring incognito mode"
 defaults write com.google.chrome IncognitoModeAvailability -integer 1
+
+\
