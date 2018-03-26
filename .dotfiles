@@ -11,9 +11,7 @@ homebrew_packages=(
 	"postgresql"
 	"mas"
 	"redis"
-	"now"
 	"yarn"
-	"slack"
 	"android-sdk"
 	"android-ndk"
 )
@@ -32,6 +30,7 @@ echo "Installing global node packages"
 node_packages=(
 	"prettier"
 	"eslint"
+	"now"
 )
 for node_package in "${node_packages[@]}"; do
 	npm install -g "$node_package"
@@ -44,6 +43,7 @@ homebrew_cask_packages=(
 	"google-chrome"
 	"spotify"
 	"slack"
+	"kap"
 )
 
 for homebrew_cask_package in "${homebrew_cask_packages[@]}"; do
