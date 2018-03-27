@@ -51,6 +51,7 @@ homebrew_cask_packages=(
 	"kap"
 	"skitch"
 	"sonos"
+	"visual-studio-code"
 	"zoomus"
 )
 
