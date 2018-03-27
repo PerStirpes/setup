@@ -45,12 +45,12 @@ echo "Installing Homebrew cask apps"
 brew tap caskroom/cask
 homebrew_cask_packages=(
 	"1password"
+	"firefox"
 	"google-chrome"
 	"spotify"
 	"slack"
 	"kap"
 	"skitch"
-	"sonos"
 	"visual-studio-code"
 	"zoomus"
 )
@@ -90,4 +90,3 @@ killall SystemUIServer
 echo "Configuring incognito mode"
 defaults write com.google.chrome IncognitoModeAvailability -integer 1
 
-\
