@@ -42,7 +42,7 @@ for node_package in "${node_packages[@]}"; do
 done
 
 echo "Installing Homebrew cask apps"
-brew tap caskroom
+brew tap caskroom/cask
 homebrew_cask_packages=(
 	"1password"
 	"google-chrome"
