@@ -34,6 +34,8 @@ node_packages=(
 	"prettier"
 	"eslint"
 	"now"
+	"create-react-native-app"
+	"create-react-app"
 )
 for node_package in "${node_packages[@]}"; do
 	npm install -g "$node_package"
