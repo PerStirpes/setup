@@ -52,6 +52,7 @@ brew tap caskroom/cask
 homebrew_cask_packages=(
 	"1password"
 	"atom"
+	"android-studio"
 	"firefox"
 	"google-chrome"
 	"kap"
