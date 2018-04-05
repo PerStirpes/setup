@@ -36,6 +36,7 @@ node_packages=(
 
 	"create-react-native-app"
 	"create-react-app"
+	"react-native-cli"
 
 	"eslint"
 	"prettier"
