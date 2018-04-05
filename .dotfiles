@@ -16,9 +16,6 @@ homebrew_packages=(
 	"vim"
 	"yarn"
 	"watchman"
-	
-	"android-sdk"
-	"android-ndk"
 )
 
 for homebrew_package in "${homebrew_packages[@]}"; do
