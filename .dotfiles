@@ -4,17 +4,19 @@ echo "Installing Homebrew"
 homebrew_packages=(
 	"bash"
 	"bash-completion"
+	"docker"
+	"fzf"
+	"git"
+	"mas"
+	"postgresql"
 	"shfmt"
 	"the_silver_searcher"
 	"tmux"
-	"fzf"
-	"vim"
-	"git"
-	"docker"
-	"postgresql"
-	"mas"
 	"redis"
+	"vim"
 	"yarn"
+	"watchman"
+	
 	"android-sdk"
 	"android-ndk"
 )
@@ -48,9 +50,10 @@ homebrew_cask_packages=(
 	"atom"
 	"firefox"
 	"google-chrome"
-	"spotify"
-	"slack"
 	"kap"
+	"now"
+	"slack"
+	"spotify"
 	"skitch"
 	"visual-studio-code"
 	"zoomus"
@@ -86,8 +89,7 @@ echo "Configuring screenshots to save in Downloads"
 defaults write com.apple.screencapture location ~/Downloads
 killall SystemUIServer
 
-# CHROME
-
-echo "Configuring incognito mode"
-defaults write com.google.chrome IncognitoModeAvailability -integer 1
+# don't use CHROME
+# echo "Configuring incognito mode"
+# defaults write com.google.chrome IncognitoModeAvailability -integer 1
 
