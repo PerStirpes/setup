@@ -33,11 +33,14 @@ npm adduser
 
 echo "Installing global node packages"
 node_packages=(
-	"prettier"
-	"eslint"
-	"now"
+
 	"create-react-native-app"
 	"create-react-app"
+
+	"eslint"
+	"prettier"
+	"now"
+	"serve"
 )
 for node_package in "${node_packages[@]}"; do
 	npm install -g "$node_package"
