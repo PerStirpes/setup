@@ -1,0 +1,92 @@
+# if you've already started tracking before adding to gitignore run git rm —cached
+
+#You can prepend a pattern with a double asterisk to match directories anywhere in the repository
+
+#You can also use a double asterisk to match files based on their name and the name of their parent directory.
+
+#An asterisk is a wildcard that matches zero or more characters.
+
+#Prepending an exclamation mark to a pattern negates it. If a file matches a pattern, but also matches a negating pattern defined later in the file, it will not be ignored.
+
+#Patterns defined after a negating pattern will re-ignore any previously negated files.
+
+#Prepending a slash matches files only in the repository root.
+
+#A question mark matches exactly one character.
+
+#Square brackets can also be used to match a single character from a specified range.
+
+#If you don't append a slash, the pattern will match both files and the contents of directories with that name. In the example matches on the left, both directories and files named logs are ignored
+
+#Patterns specifying a file in a particular directory are relative to the repository root. (You can prepend a slash if you like, but it doesn't do anything special.)
+**/logs
+
+############### Node.gitignore ############
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+.grunt
+
+# Bower dependency directory (https://bower.io/)
+bower_components
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Typescript declaration files
+typings/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+############### End of Node.gitignore ############
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+*~
+
+###########Start of Python.gitignore #################
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Flask stuff:
+instance/
+.webassets-cache
