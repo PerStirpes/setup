@@ -56,6 +56,7 @@ homebrew_cask_packages=(
 	"flux"
 	"google-chrome"
 	"kap"
+	"ngrok"
 	"now"
 	"slack"
 	"spotify"
