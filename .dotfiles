@@ -8,6 +8,7 @@ homebrew_packages=(
 	"docker"
 	"fzf"
 	"git"
+	"httpie"
 	"mas"
 	"postgresql"
 	"shfmt"
