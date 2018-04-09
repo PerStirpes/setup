@@ -1,0 +1,93 @@
+[user]
+	name = Matt Barraza-Carl
+	email = PerStirpes@users.noreply.github.com
+	username = PerStirpes
+
+[github]
+	user = PerStirpes
+
+[core]
+  editor = code
+  excludesfile = /Users/booboo/.gitignore_global
+  autocrlf = input
+  safecrif = true
+  pager = less
+
+[push]
+  default = simple
+
+[log]
+  date = relative
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[credential]
+	helper = osxkeychain
+
+[commit]
+	template = /Users/booboo/.git-commit-template.txt
+
+[help]
+  	autocorrect = 1
+
+[alias]
+  c = "git add -A && git commit -m"
+  co = checkout
+  br = branch
+  cm = commit
+  type = cat-file -t
+  dump = cat-file -p
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+  i = init
+  p = push
+  # Show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  graph = log —-graph -—oneline
+  ls = ls 
+
+# npm
+  dev = run dev
+	ac = !git add -A && git commit
+
+
+# # git
+#   drop = git clean -f && git stash save --keep-index && git stash drop
+#   push-tags = git push && git push --tags
+      
+#     alias bye="git reset --hard HEAD^1"
+#     alias push="git push"
+#     alias up="git push && git pull"
+#     alias list="git log --oneline"
+#     alias latest="git log -1 HEAD"
+#     alias clear-branches="git branch | grep -v 'master' | xargs git branch -D"
+#
+#     # npm
+#
+#     alias s="npm start"
+#     alias dev="npm run dev"
+#     alias deps="rm -rf node_modules package-lock.json && i"
+#     alias globals="npm list -g --depth=0"
+#
+#     # other
+#
+#     alias count="ls -1 | wc -l"
+#     alias ls="ls -A"
+#     alias a="atom ."
