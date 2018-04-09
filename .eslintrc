@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "ecmaFeatures": {
+    "modules": true,
+    "experimentalObjectRestSpread": true
+  },
+  "env": {
+    "amd": true,
+    "browser": true,
+    "es6": true,
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "$": true
+  }
+}
