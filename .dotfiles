@@ -10,14 +10,18 @@ homebrew_packages=(
 	"git"
 	"httpie"
 	"mas"
+	"openssl"
 	"postgresql"
 	"shfmt"
 	"the_silver_searcher"
 	"tmux"
+	"tree"
 	"redis"
+	"rust"
 	"vim"
 	"yarn"
 	"watchman"
+	"z"
 )
 
 for homebrew_package in "${homebrew_packages[@]}"; do
@@ -55,6 +59,7 @@ homebrew_cask_packages=(
 	"flux"
 	"google-chrome"
 	"kap"
+	"keybase"
 	"postman"
 	"ngrok"
 	"now"
