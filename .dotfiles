@@ -32,11 +32,9 @@ npm adduser
 
 echo "Installing global node packages"
 node_packages=(
-
 	"create-react-native-app"
 	"create-react-app"
 	"react-native-cli"
-
 	"eslint"
 	"prettier"
 	"now"
@@ -50,6 +48,7 @@ echo "Installing Homebrew cask apps"
 brew tap caskroom/cask
 homebrew_cask_packages=(
 	"1password"
+	"appcleaner"
 	"atom"
 	"android-studio"
 	"firefox"
@@ -59,6 +58,7 @@ homebrew_cask_packages=(
 	"postman"
 	"ngrok"
 	"now"
+	"signal"
 	"slack"
 	"spotify"
 	"skitch"
