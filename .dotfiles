@@ -85,9 +85,9 @@ killall Finder
 
 # MENU BAR
 
-echo "Configuring menu bar to autohide"
-defaults write NSGlobalDomain _HIHideMenuBar -bool true
-killall Finder
+# echo "Configuring menu bar to autohide"
+# defaults write NSGlobalDomain _HIHideMenuBar -bool true
+# killall Finder
 echo "Configuring dock to autohide"
 osascript <<EOD
   tell application "System Events"
