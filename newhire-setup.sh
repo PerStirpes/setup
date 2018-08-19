@@ -8,7 +8,6 @@ homebrew_cask_packages=(
 	"firefox"
 	"flux"
 	"google-chrome"
-	"slack"
 	"spotify"
 	"skitch"
 	"zoomus"
