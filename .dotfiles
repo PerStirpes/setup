@@ -2,12 +2,16 @@ echo "Installing Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 homebrew_packages=(
+	"awscli"
 	"coreutils"
 	"bash"
+	
 	"bash-completion"
 	"docker"
+	"eksctl"
 	"fzf"
 	"git"
+	"google-cloud-sdk"
 	"httpie"
 	"mas"
 	"openssl"
@@ -18,6 +22,7 @@ homebrew_packages=(
 	"tree"
 	"redis"
 	"rust"
+	"vagrant-completion"
 	"vim"
 	"yarn"
 	"watchman"
@@ -36,12 +41,10 @@ npm adduser
 
 echo "Installing global node packages"
 node_packages=(
-	"create-react-native-app"
+	
 	"create-react-app"
-	"react-native-cli"
 	"eslint"
 	"prettier"
-	"now"
 	"serve"
 	"exp"
 )
@@ -53,23 +56,21 @@ echo "Installing Homebrew cask apps"
 brew tap caskroom/cask
 homebrew_cask_packages=(
 	"1password"
+	"awscli"
 	"appcleaner"
-	"atom"
-	"android-studio"
+	"cloudapp"
+	"docker"
+	
 	"firefox"
-	"flux"
 	"google-chrome"
-	"kap"
-	"keybase"
+	"google-cloud-sdk"
 	"postman"
 	"ngrok"
-	"now"
-	"signal"
 	"slack"
+	"spectacle"
 	"spotify"
-	"skitch"
+	"virtualbox"
 	"visual-studio-code"
-	"expo-xde"
 	"zoomus"
 )
 
